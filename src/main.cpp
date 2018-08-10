@@ -68,16 +68,6 @@ int main(int argc, char** argv)
 	printIp(std::cout, short(0));
 	printIp(std::cout, int(2130706433));
 	printIp(std::cout, long(8875824491850138409));
-					
-	std::string str("string");
-	printIp(std::cout, str);
-	
-	std::vector<int> tt;
-	tt.push_back(10);
-	printIp(std::cout, tt);
-	
-	auto tmp = std::make_tuple(1,2,3);
-	printIp(std::cout, tmp);
-	
+						
 	return 0;
 }
