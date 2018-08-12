@@ -56,7 +56,7 @@ namespace __tuple{
 
 template <typename T>
 decltype(std::tuple_size<T>::value, void())
-printIp (std::ostream& os, T& ip){
+printIp (std::ostream& os, const T& ip){
 	__tuple::callback out(os);
 	for_each(ip, out);
 	os << std::endl;
