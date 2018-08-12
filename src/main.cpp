@@ -17,7 +17,7 @@ printIp(std::ostream& os, const T& ip){
 	os << std::endl;	
 }
 
-//на мой взгляд лучше использовать перегрузку, на в задании требуется специализация
+//на мой взгляд лучше использовать перегрузку, нj в задании требуется специализация
 template <typename T>
 typename std::enable_if <std::is_same<T, std::string>::value >::type
 printIp(std::ostream& os, const T& ip){
