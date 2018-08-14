@@ -6,7 +6,7 @@ script:
   - cmake .
   - cmake --build .
   - cmake --build . --target package
-
+  - doxygen Doxyfile 
 before_deploy: 
   - 'export _PROJECT_VERSION=`grep -Eo "[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+" cmake/GetGitRevisionDescription/version.cpp`'
 
