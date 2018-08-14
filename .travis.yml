@@ -16,8 +16,6 @@ before_deploy:
   - 'export _PROJECT_VERSION=`grep -Eo "[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+" cmake/GetGitRevisionDescription/version.cpp`'
 
 deploy:
-    on:
-        all_branches: true
   - provider: pages
     skip-cleanup: true
     github-token: $GITHUB_TOKEN
@@ -27,4 +25,5 @@ deploy:
     skip_cleanup: true
     script:
     - '! curl -T printIp-${_PROJECT_VERSION}-Linux.deb -uboydad:$BINTRAY_API_KEY "https://api.bintray.com/content/boydad/otus-cpp/10-4-PrintIp/${_PROJECT_VERSION}/printIp/printIp-${_PROJECT_VERSION}-Linux.deb;deb_distribution=trusty;deb_component=main;deb_architecture=amd64;publish=1" | grep -v success'
-
+    on:
+        all_branches: true
