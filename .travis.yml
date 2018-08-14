@@ -16,6 +16,7 @@ deploy:
     skip-cleanup: true
     github-token: $GITHUB_TOKEN
     local-dir: html
+    keep-history: true
     on:
           branch: master
   - provider: script
