@@ -9,7 +9,7 @@
  * 
  * Функции перегруженны для следующих типов ip адреса:
  * - базовые типы;
- * - строка std::string (печатается как есть;
+ * - строка std::string (печатается как есть);
  * - контенеры std::vestor и std::list (печать происходит поэлементно);
  * - кортеж std::tupl (печатается поэлементно).
  * 
@@ -23,7 +23,7 @@
 #include <type_traits>
 #include "forEachTuple.h"
 
-/// \brief Перегрузка для базовых типов.
+/// \brief Перегрузка для базовых типов. \callergraph
 template <typename T>
 typename std::enable_if <std::is_integral<T>::value>::type
 printIp(std::ostream& os, const T& ip){
@@ -37,6 +37,7 @@ printIp(std::ostream& os, const T& ip){
 }
 
 /// \brief Перегрузка для строки.
+/// \callergraph
 template <typename T>
 typename std::enable_if <std::is_same<T, std::string>::value >::type
 printIp(std::ostream& os, const T& ip){
