@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>ipPrint: Исходный файл include/printIp.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">ipPrint
+   </div>
+   <div id="projectbrief">Homework 4 from lesson 10</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">printIp.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="print_ip_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;type_traits&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;forEachTuple.h&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">typename</span> std::enable_if &lt;std::is_integral&lt;T&gt;::value&gt;::type</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="print_ip_8h.html#ab0e3c783c3d4e423a315fae7c149037d">   29</a></span>&#160;<a class="code" href="print_ip_8h.html#ab0e3c783c3d4e423a315fae7c149037d">printIp</a>(std::ostream&amp; os, <span class="keyword">const</span> T&amp; ip){</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">size_t</span> num = <span class="keyword">sizeof</span>(ip);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* ptr = <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span> (&amp;ip);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    os &lt;&lt; +(<span class="keywordtype">unsigned</span> char) (ptr[num-1]);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=num-2; i&gt;=0; --i)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;.&#39;</span> &lt;&lt; +(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>) (ptr[i]) ;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    os &lt;&lt; std::endl;    </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">typename</span> std::enable_if &lt;std::is_same&lt;T, std::string&gt;::value &gt;::type</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="print_ip_8h.html#a83c64960c90cfadf09a0937b67a4571b">   42</a></span>&#160;<a class="code" href="print_ip_8h.html#ab0e3c783c3d4e423a315fae7c149037d">printIp</a>(std::ostream&amp; os, <span class="keyword">const</span> T&amp; ip){</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    os &lt;&lt; ip &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">typename</span> std::enable_if &lt;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        std::is_same &lt;std::vector&lt;typename T::value_type&gt;, T&gt;::value ||</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        std::is_same &lt;std::list&lt;typename T::value_type&gt;, T&gt;::value</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    &gt;::type</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="print_ip_8h.html#accc25e68512e35d328cff806500e5d94">   52</a></span>&#160;<a class="code" href="print_ip_8h.html#ab0e3c783c3d4e423a315fae7c149037d">printIp</a> (std::ostream&amp; os, <span class="keyword">const</span> T&amp; ip){</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> ip_part = ip.cbegin(); ip_part != ip.cend(); ++ip_part) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">if</span> (ip_part != ip.cbegin())</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            os &lt;&lt; <span class="stringliteral">&quot;.&quot;</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        os &lt;&lt; *ip_part;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    os &lt;&lt; std::endl;    </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">namespace </span>__tuple{</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">struct </span>callback</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        callback(std::ostream&amp; os): os(os) {};</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordtype">void</span> operator()(<span class="keywordtype">int</span> index, T&amp;&amp; t)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        {                                </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordflow">if</span>(index != 0)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                os &lt;&lt; <span class="charliteral">&#39;.&#39;</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            os &lt;&lt; t;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        std::ostream&amp; os;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    };</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;decltype(std::tuple_size&lt;T&gt;::value, <span class="keywordtype">void</span>())</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="print_ip_8h.html#ae5fd9f161e0b0d84f6ab973dcdbcc4fe">   80</a></span>&#160;<a class="code" href="print_ip_8h.html#ab0e3c783c3d4e423a315fae7c149037d">printIp</a> (std::ostream&amp; os, const T&amp; ip){</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    __tuple::callback out(os);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    for_each(ip, out);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    os &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<div class="ttc" id="print_ip_8h_html_ab0e3c783c3d4e423a315fae7c149037d"><div class="ttname"><a href="print_ip_8h.html#ab0e3c783c3d4e423a315fae7c149037d">printIp</a></div><div class="ttdeci">std::enable_if&lt; std::is_integral&lt; T &gt;::value &gt;::type printIp(std::ostream &amp;os, const T &amp;ip)</div><div class="ttdoc">Перегрузка для базовых типов. </div><div class="ttdef"><b>Definition:</b> printIp.h:29</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>
