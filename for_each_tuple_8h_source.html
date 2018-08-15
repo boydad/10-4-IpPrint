@@ -38,6 +38,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
       <li class="current"><a href="files.html"><span>Файлы</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -68,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -87,10 +89,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 <div class="title">forEachTuple.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;tuple&gt;</span></div>
+<a href="for_each_tuple_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;tuple&gt;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span>_detail_</div>
+<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="namespace__detail__.html">    4</a></span>&#160;<span class="keyword">namespace </span>_detail_</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <span class="comment">// Главная роль здесь у шаблона класса iterate_tuple.</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    </div>
@@ -108,12 +110,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="comment">// ситуации, когда кортеж не содержит ни одного элемента.</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">template</span>&lt;<span class="keywordtype">int</span> index, <span class="keyword">typename</span> Callback, <span class="keyword">typename</span>... Args&gt;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">struct </span>iterate_tuple </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="struct__detail___1_1iterate__tuple.html">   22</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct__detail___1_1iterate__tuple.html">iterate_tuple</a> </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> next(<span class="keyword">const</span> std::tuple&lt;Args...&gt;&amp; t, Callback callback) </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="struct__detail___1_1iterate__tuple.html#a1d6e290a8f9cf34d3f7aa0145402c983">   24</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="struct__detail___1_1iterate__tuple.html#a1d6e290a8f9cf34d3f7aa0145402c983">next</a>(<span class="keyword">const</span> std::tuple&lt;Args...&gt;&amp; t, Callback callback) </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        {</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="comment">// Уменьшаем позицию и рекурсивно вызываем этот же метод </span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            iterate_tuple&lt;index - 1, Callback, Args...&gt;::next(t, callback);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <a class="code" href="struct__detail___1_1iterate__tuple.html#a1d6e290a8f9cf34d3f7aa0145402c983">iterate_tuple&lt;index - 1, Callback, Args...&gt;::next</a>(t, callback);</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="comment">// Вызываем обработчик и передаем ему позицию и значение элемента</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            callback(index, std::get&lt;index&gt;(t));</div>
@@ -122,9 +124,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">// Частичная специализация для индекса 0 (завершает рекурсию)</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Callback, <span class="keyword">typename</span>... Args&gt;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">struct </span>iterate_tuple&lt;0, Callback, Args...&gt; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="struct__detail___1_1iterate__tuple_3_010_00_01_callback_00_01_args_8_8_8_4.html">   36</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct__detail___1_1iterate__tuple.html">iterate_tuple</a>&lt;0, Callback, Args...&gt; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> next(<span class="keyword">const</span> std::tuple&lt;Args...&gt;&amp; t, Callback callback) </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="struct__detail___1_1iterate__tuple_3_010_00_01_callback_00_01_args_8_8_8_4.html#a13c47735ba5ce4470064a0c403a5cd23">   38</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="struct__detail___1_1iterate__tuple_3_010_00_01_callback_00_01_args_8_8_8_4.html#a13c47735ba5ce4470064a0c403a5cd23">next</a>(<span class="keyword">const</span> std::tuple&lt;Args...&gt;&amp; t, Callback callback) </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        {</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            callback(0, std::get&lt;0&gt;(t));</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        }</div>
@@ -132,9 +134,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">// Частичная специализация для индекса -1 (пустой кортеж)</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Callback, <span class="keyword">typename</span>... Args&gt;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">struct </span>iterate_tuple&lt;-1, Callback, Args...&gt;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="struct__detail___1_1iterate__tuple_3-1_00_01_callback_00_01_args_8_8_8_4.html">   46</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct__detail___1_1iterate__tuple.html">iterate_tuple</a>&lt;-1, Callback, Args...&gt;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> next(std::tuple&lt;Args...&gt;&amp; t, Callback callback)</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="struct__detail___1_1iterate__tuple_3-1_00_01_callback_00_01_args_8_8_8_4.html#aca2a7f2310f84c0e520de5ac48e7a642">   48</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="struct__detail___1_1iterate__tuple_3-1_00_01_callback_00_01_args_8_8_8_4.html#aca2a7f2310f84c0e520de5ac48e7a642">next</a>(std::tuple&lt;Args...&gt;&amp; t, Callback callback)</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        {</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="comment">// ничего не делаем</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        }</div>
@@ -146,14 +148,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">// &quot;Волшебный&quot; for_each для обхода элементов кортежа (compile time!):</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Callback, <span class="keyword">typename</span>... Args&gt;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">void</span> for_each(<span class="keyword">const</span>  std::tuple&lt;Args...&gt;&amp; t, Callback&amp; callback) </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="for_each_tuple_8h.html#a6e1c50af3c529d4fd26f0e56c100e8e5">   60</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="for_each_tuple_8h.html#a6e1c50af3c529d4fd26f0e56c100e8e5">for_each</a>(<span class="keyword">const</span>  std::tuple&lt;Args...&gt;&amp; t, Callback&amp; callback) </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// Размер кортежа</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">int</span> <span class="keyword">const</span> t_size = std::tuple_size&lt;std::tuple&lt;Args...&gt;&gt;::value;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// Запускаем рекурсивный обход элементов кортежа во время компиляции</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    _detail_::iterate_tuple&lt;t_size - 1, Callback, Args...&gt;::next(t, callback);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="struct__detail___1_1iterate__tuple.html#a1d6e290a8f9cf34d3f7aa0145402c983">_detail_::iterate_tuple&lt;t_size - 1, Callback, Args...&gt;::next</a>(t, callback);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
+<div class="ttc" id="for_each_tuple_8h_html_a6e1c50af3c529d4fd26f0e56c100e8e5"><div class="ttname"><a href="for_each_tuple_8h.html#a6e1c50af3c529d4fd26f0e56c100e8e5">for_each</a></div><div class="ttdeci">void for_each(const std::tuple&lt; Args...&gt; &amp;t, Callback &amp;callback)</div><div class="ttdef"><b>Definition:</b> forEachTuple.h:60</div></div>
+<div class="ttc" id="struct__detail___1_1iterate__tuple_html_a1d6e290a8f9cf34d3f7aa0145402c983"><div class="ttname"><a href="struct__detail___1_1iterate__tuple.html#a1d6e290a8f9cf34d3f7aa0145402c983">_detail_::iterate_tuple::next</a></div><div class="ttdeci">static void next(const std::tuple&lt; Args...&gt; &amp;t, Callback callback)</div><div class="ttdef"><b>Definition:</b> forEachTuple.h:24</div></div>
+<div class="ttc" id="struct__detail___1_1iterate__tuple_3_010_00_01_callback_00_01_args_8_8_8_4_html_a13c47735ba5ce4470064a0c403a5cd23"><div class="ttname"><a href="struct__detail___1_1iterate__tuple_3_010_00_01_callback_00_01_args_8_8_8_4.html#a13c47735ba5ce4470064a0c403a5cd23">_detail_::iterate_tuple&lt; 0, Callback, Args...&gt;::next</a></div><div class="ttdeci">static void next(const std::tuple&lt; Args...&gt; &amp;t, Callback callback)</div><div class="ttdef"><b>Definition:</b> forEachTuple.h:38</div></div>
+<div class="ttc" id="struct__detail___1_1iterate__tuple_3-1_00_01_callback_00_01_args_8_8_8_4_html_aca2a7f2310f84c0e520de5ac48e7a642"><div class="ttname"><a href="struct__detail___1_1iterate__tuple_3-1_00_01_callback_00_01_args_8_8_8_4.html#aca2a7f2310f84c0e520de5ac48e7a642">_detail_::iterate_tuple&lt;-1, Callback, Args...&gt;::next</a></div><div class="ttdeci">static void next(std::tuple&lt; Args...&gt; &amp;t, Callback callback)</div><div class="ttdef"><b>Definition:</b> forEachTuple.h:48</div></div>
+<div class="ttc" id="struct__detail___1_1iterate__tuple_html"><div class="ttname"><a href="struct__detail___1_1iterate__tuple.html">_detail_::iterate_tuple</a></div><div class="ttdef"><b>Definition:</b> forEachTuple.h:22</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

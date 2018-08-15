@@ -38,6 +38,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
       <li class="current"><a href="files.html"><span>Файлы</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -68,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -84,6 +86,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#namespaces">Пространства имен</a> &#124;
 <a href="#func-members">Функции</a>  </div>
   <div class="headertitle">
 <div class="title">Файл printIp.h</div>  </div>
@@ -93,13 +97,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 <p>Содержит семейство функций printIp, которые печатают ip побайтно в поток os, разделяя байты точкой.  
 <a href="#details">Подробнее...</a></p>
 <div class="textblock"><code>#include &lt;type_traits&gt;</code><br/>
-<code>#include &quot;forEachTuple.h&quot;</code><br/>
+<code>#include &quot;<a class="el" href="for_each_tuple_8h_source.html">forEachTuple.h</a>&quot;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Граф включаемых заголовочных файлов для printIp.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="print_ip_8h__incl.png" border="0" usemap="#include_2print_ip_8h" alt=""/></div>
 <map name="include_2print_ip_8h" id="include_2print_ip_8h">
-<area shape="rect" id="node3" href="for_each_tuple_8h_source.html" title="forEachTuple.h" alt="" coords="111,80,221,107"/></map>
+<area shape="rect" id="node3" href="for_each_tuple_8h.html" title="forEachTuple.h" alt="" coords="111,80,221,107"/></map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 Граф файлов, в которые включается этот файл:</div>
@@ -111,37 +115,43 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 </div>
 <p><a href="print_ip_8h_source.html">См. исходные тексты.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____tuple_1_1callback.html">__tuple::callback</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Пространства имен</h2></td></tr>
+<tr class="memitem:namespace____tuple"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace____tuple.html">__tuple</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Функции</h2></td></tr>
-<tr class="memitem:ab0e3c783c3d4e423a315fae7c149037d"><td class="memTemplParams" colspan="2"><a class="anchor" id="ab0e3c783c3d4e423a315fae7c149037d"></a>
-template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ab0e3c783c3d4e423a315fae7c149037d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ab0e3c783c3d4e423a315fae7c149037d"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak"/>
 &lt; std::is_integral&lt; T &gt;::value &gt;<br class="typebreak"/>
 ::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="print_ip_8h.html#ab0e3c783c3d4e423a315fae7c149037d">printIp</a> (std::ostream &amp;os, const T &amp;ip)</td></tr>
-<tr class="memdesc:ab0e3c783c3d4e423a315fae7c149037d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перегрузка для базовых типов. <br/></td></tr>
+<tr class="memdesc:ab0e3c783c3d4e423a315fae7c149037d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перегрузка для базовых типов.  <a href="#ab0e3c783c3d4e423a315fae7c149037d">Подробнее...</a><br/></td></tr>
 <tr class="separator:ab0e3c783c3d4e423a315fae7c149037d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83c64960c90cfadf09a0937b67a4571b"><td class="memTemplParams" colspan="2"><a class="anchor" id="a83c64960c90cfadf09a0937b67a4571b"></a>
-template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a83c64960c90cfadf09a0937b67a4571b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a83c64960c90cfadf09a0937b67a4571b"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; std::is_same<br class="typebreak"/>
 &lt; T, std::string &gt;::value &gt;<br class="typebreak"/>
 ::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="print_ip_8h.html#a83c64960c90cfadf09a0937b67a4571b">printIp</a> (std::ostream &amp;os, const T &amp;ip)</td></tr>
-<tr class="memdesc:a83c64960c90cfadf09a0937b67a4571b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перегрузка для строки. <br/></td></tr>
+<tr class="memdesc:a83c64960c90cfadf09a0937b67a4571b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перегрузка для строки.  <a href="#a83c64960c90cfadf09a0937b67a4571b">Подробнее...</a><br/></td></tr>
 <tr class="separator:a83c64960c90cfadf09a0937b67a4571b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accc25e68512e35d328cff806500e5d94"><td class="memTemplParams" colspan="2"><a class="anchor" id="accc25e68512e35d328cff806500e5d94"></a>
-template&lt;typename T &gt; </td></tr>
+<tr class="memitem:accc25e68512e35d328cff806500e5d94"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:accc25e68512e35d328cff806500e5d94"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; std::is_same<br class="typebreak"/>
 &lt; std::vector&lt; typename <br class="typebreak"/>
 T::value_type &gt;, T &gt;::value||std::is_same<br class="typebreak"/>
 &lt; std::list&lt; typename <br class="typebreak"/>
 T::value_type &gt;, T &gt;::value &gt;<br class="typebreak"/>
 ::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="print_ip_8h.html#accc25e68512e35d328cff806500e5d94">printIp</a> (std::ostream &amp;os, const T &amp;ip)</td></tr>
-<tr class="memdesc:accc25e68512e35d328cff806500e5d94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перегрузка для контейнеров std::vector и std::list. <br/></td></tr>
+<tr class="memdesc:accc25e68512e35d328cff806500e5d94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перегрузка для контейнеров std::vector и std::list.  <a href="#accc25e68512e35d328cff806500e5d94">Подробнее...</a><br/></td></tr>
 <tr class="separator:accc25e68512e35d328cff806500e5d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5fd9f161e0b0d84f6ab973dcdbcc4fe"><td class="memTemplParams" colspan="2"><a class="anchor" id="ae5fd9f161e0b0d84f6ab973dcdbcc4fe"></a>
-template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ae5fd9f161e0b0d84f6ab973dcdbcc4fe"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ae5fd9f161e0b0d84f6ab973dcdbcc4fe"><td class="memTemplItemLeft" align="right" valign="top">decltype(std::tuple_size&lt; T &gt;<br class="typebreak"/>
 ::value, void())&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="print_ip_8h.html#ae5fd9f161e0b0d84f6ab973dcdbcc4fe">printIp</a> (std::ostream &amp;os, const T &amp;ip)</td></tr>
-<tr class="memdesc:ae5fd9f161e0b0d84f6ab973dcdbcc4fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перегрузка для std::tuple. <br/></td></tr>
+<tr class="memdesc:ae5fd9f161e0b0d84f6ab973dcdbcc4fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перегрузка для std::tuple.  <a href="#ae5fd9f161e0b0d84f6ab973dcdbcc4fe">Подробнее...</a><br/></td></tr>
 <tr class="separator:ae5fd9f161e0b0d84f6ab973dcdbcc4fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
@@ -150,12 +160,142 @@ template&lt;typename T &gt; </td></tr>
 <p>Функции перегруженны для следующих типов ip адреса:</p>
 <ul>
 <li>базовые типы;</li>
-<li>строка std::string (печатается как есть;</li>
+<li>строка std::string (печатается как есть);</li>
 <li>контенеры std::vestor и std::list (печать происходит поэлементно);</li>
 <li>кортеж std::tupl (печатается поэлементно).</li>
 </ul>
 <p>Примеры ипользования приведены в <a class="el" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Основная функция проекта. ">main()</a>. </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Функции</h2>
+<a class="anchor" id="ab0e3c783c3d4e423a315fae7c149037d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if&lt;std::is_integral&lt;T&gt;::value&gt;::type printIp </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>ip</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перегрузка для базовых типов. </p>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="print_ip_8h_ab0e3c783c3d4e423a315fae7c149037d_icgraph.png" border="0" usemap="#print_ip_8h_ab0e3c783c3d4e423a315fae7c149037d_icgraph" alt=""/></div>
+<map name="print_ip_8h_ab0e3c783c3d4e423a315fae7c149037d_icgraph" id="print_ip_8h_ab0e3c783c3d4e423a315fae7c149037d_icgraph">
+<area shape="rect" id="node2" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Основная функция проекта. " alt="" coords="112,5,163,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a83c64960c90cfadf09a0937b67a4571b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if&lt;std::is_same&lt;T, std::string&gt;::value &gt;::type printIp </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>ip</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перегрузка для строки. </p>
+
+</div>
+</div>
+<a class="anchor" id="accc25e68512e35d328cff806500e5d94"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if&lt; std::is_same &lt;std::vector&lt;typename T::value_type&gt;, T&gt;::value || std::is_same &lt;std::list&lt;typename T::value_type&gt;, T&gt;::value &gt;::type printIp </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>ip</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перегрузка для контейнеров std::vector и std::list. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae5fd9f161e0b0d84f6ab973dcdbcc4fe"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">decltype(std::tuple_size&lt;T&gt;::value, void()) printIp </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>ip</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перегрузка для std::tuple. </p>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Создано системой &#160;<a href="http://www.doxygen.org/index.html">

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['Доманее_20задание_2003_20к_20уроку_2010',['Доманее задание 03 к уроку 10',['../index.html',1,'']]]
+  ['for_5feach',['for_each',['../for_each_tuple_8h.html#a6e1c50af3c529d4fd26f0e56c100e8e5',1,'forEachTuple.h']]],
+  ['foreachtuple_2eh',['forEachTuple.h',['../for_each_tuple_8h.html',1,'']]]
 ];
